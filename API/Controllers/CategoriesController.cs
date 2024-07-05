@@ -77,7 +77,7 @@ namespace API.Controllers
         public async Task<IActionResult> UpdateCategory([FromForm]UpdateCategoryDTO model)
         {
             if (model is null)
-                return BadRequest("Bir şeyler ters gitti!");
+                return BadRequest("Bir şeyler ters gitti");
 
             if (await _categoryRepo.AnyAsync(x => x.Name == model.Name && x.Id != model.Id))
                 return BadRequest("Bu isim kullanılmaktadır. Başka bir isim seçiniz!");
