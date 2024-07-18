@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Services.Interface
 {
-    public interface ICategoryRepository : IBaseRepository<Category>
+    public interface IProductRepository : IBaseRepository<Product>
     {
 
     }

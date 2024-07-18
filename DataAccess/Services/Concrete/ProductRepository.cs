@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Services.Concrete
 {
-    public class CategoryRepository : BaseRepository<Category>, ICategoryRepository
+    public class ProductRepository : BaseRepository<Product>,IProductRepository
     {
-        public CategoryRepository(AppDbContext context) : base(context)
+        public ProductRepository(AppDbContext context) : base(context)
         {
-
+            
         }
     }
 }
